@@ -39,7 +39,7 @@ The developers of [elementary OS](http://elementary.io) and [Linux Mint](http://
 We who have starred this repository would love to see this option in LSB specification or at least in as many Ubuntu forks as possible. This will indeed make shell script developers lives a lot easier.
 
 ## Spread the love
-If you also think the ideal solution is the implementation of the `lsb_release -u` option across as many distributions as possible, please help us spread the love.
+If you also think the ideal solution is to implement the `lsb_release -u` option across as many distributions as possible, please help us spread the love.
 
 Share this repository with everybody so we can someday reach developers from other distros.
 
