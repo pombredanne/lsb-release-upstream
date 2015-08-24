@@ -21,7 +21,7 @@ echo "Upstream Linux distribution is '$lsb_dist' version '$dist_version'."
 
 If this script is executed in elementary OS Freya, for example, you'd have `$lsb_dist=ubuntu` and `$dist_version=trusty`, which is the corresponding Ubuntu version it has derivated from.
 
-## The ideal solution (I think)
+## The proposed ideal solution
 The awesome developers of [JoliOS](https://www.jolicloud.com/jolios) have implemented a neat way of retrieving that, and you can [check it here](https://github.com/jolicloud/lsb/commit/fde07bfec0935784e5caa6cd6a2ff5f81c3d0ad4).
 
 They've implemented a new argument in the `lsb_release` which is `-u` or `--upstream`. It'll read the file located in `/etc/upstream-release/lsb-release` to fetch information about which Ubuntu version it has been derivated. The file is in the same format as `/etc/lsb-release`, but with Ubuntu info:
