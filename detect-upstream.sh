@@ -18,8 +18,8 @@ not_found() {
 # Get information about currenty Linux distribution
 if command_exists lsb_release; then
 	lsb_dist=$(lsb_release -i | cut -d ':' -f 2 | tr '[:upper:]' '[:lower:]' | tr -d '\t' | tr -d ' ')
-	dist_name=$(lsb_release -c | cut -d ':' -f 2 | tr '[:upper:]' '[:lower:]' | tr -d '\t' | tr -d ' ')
-	url="$base_url/$lsb_dist/$dist_name"
+	dist_version=$(lsb_release -c | cut -d ':' -f 2 | tr '[:upper:]' '[:lower:]' | tr -d '\t' | tr -d ' ')
+	url="$base_url/$lsb_dist/$dist_version"
 # The command lsb_release doesn't exist, thus we cannot detect current distro
 else
 	cat <<-EOF
@@ -51,5 +51,5 @@ fi
 # Check if upstream distro has been detected
 if [ "$upstream" != "" ]; then
 	lsb_dist=$(echo $upstream | cut -d ':' -f 1)
-	dist_name=$(echo $upstream | cut -d ':' -f 2)
+	dist_version=$(echo $upstream | cut -d ':' -f 2)
 fi
