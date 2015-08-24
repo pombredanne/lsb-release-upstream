@@ -6,7 +6,7 @@ You need to add an apt repository in the installation script of your application
 
 But what version of Ubuntu repositories would you use? Trusty, Saucy, Precise? How do you programatically determine that?
 
-# The paliative solution
+# The palliative solution
 As there isn't any default and broadly supported way of getting that, this repository is intended to be a public database for serving these valuable information.
 
 All you need to do is to copy the `detect-upstream.sh` file from this repository to your setup and source it in your script. You'll profit anytime new Linux distributions are added to this repository.
